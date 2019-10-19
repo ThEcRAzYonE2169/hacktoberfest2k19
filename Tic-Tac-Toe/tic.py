@@ -1,7 +1,7 @@
 from tkinter import *
 import tkinter.messagebox
 tk = Tk()
-tk.title("Tic Tac Toe")
+tk.title("Kattam Kutti")
 
 pa = StringVar()
 playerb = StringVar()
@@ -34,8 +34,8 @@ def btnClick(buttons):
     if buttons["text"] == " " and bclick == True:
         buttons["text"] = "X"
         bclick = False
-        playerb = p2.get() + " Wins!"
-        pa = p1.get() + " Wins!"
+        playerb = p2.get() + " Jeet!"
+        pa = p1.get() + " Jeet!"
         checkForWin()
         flag += 1
 
@@ -49,12 +49,12 @@ def btnClick(buttons):
         tkinter.messagebox.showinfo("Tic-Tac-Toe", "Button already Clicked!")
 
 def checkForWin():
-    if (button1['text'] == 'X' and button2['text'] == 'X' and button3['text'] == 'X' or):
+    if (button1['text'] == 'X' and button2['text'] == 'X' and button3['text'] == 'X' ):
         disableButton()
         tkinter.messagebox.showinfo("Tic-Tac-Toe", pa)
 
     elif(flag == 8):
-        tkinter.messagebox.showinfo("Tic-Tac-Toe", "It is a Tie")
+        tkinter.messagebox.showinfo("Tic-Tac-Toe", "Tie Ho Gaya Bhaiyaji")
 
     elif (button1['text'] == 'O' and button2['text'] == 'O' and button3['text'] == 'O' or
           button4['text'] == 'O' and button5['text'] == 'O' and button6['text'] == 'O' or
