@@ -4,7 +4,7 @@ def hangman():
 
     #read_file = read(opened_file)
     movie = list(opened_file)
-    turns=10
+    turns=11
     guesses=[]
     for i in range(turns,0,-1):
         n=random.randint(0,len(movie)-1)
@@ -27,7 +27,7 @@ def hangman():
             continue
         
 hangman()
-print("While you may or may not have won in the game, you will always be a loser in life")
+print("While you may or may not have won in the game, you'll always fail,i guess")
         
 
         
